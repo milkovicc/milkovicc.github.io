@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Pink Tail</title>
+		<link>https://milkovicc.github.io/index.html</link>
+		<description>Pet shop Pink Tail offers over 5000 items in one place, including pet food and toys.</description>
+		<item>
+			<title>New in sales offers</title>
+			<link>https://milkovicc.github.io/index.html#shop</link>
+			<description>Follow for news about sales!</description>
+		</item>
+		<item>
+			<title>About us</title>
+			<link>https://milkovicc.github.io/index.html#about</link>
+			<description>Follow for updates about us!</description>
+		</item>
+	</channel>
+</rss>
+	
