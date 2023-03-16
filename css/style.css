@@ -139,14 +139,14 @@ header {
 }
 .button1 {
     display: inline-block;
-    margin: 5px; /* space between buttons */
-    background: #FCCCC9; /* background color */
-    color: white; /* text color */
+    margin: 5px; 
+    background: #FCCCC9; 
+    color: white; 
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    border-radius: 50px; /* rounded corners */
-    padding: 8px 16px; /* space around text */
+    border-radius: 50px; 
+    padding: 8px 16px; 
     -moz-transition: all 0.2s;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
@@ -274,12 +274,12 @@ header {
 }
 .abbutton {
     position: absolute;
-    background: #F0BC42; /* background color */
-    color: white; /* text color */
+    background: #F0BC42; 
+    color: white; 
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
-    border-radius: 50px; /* rounded corners */
-    padding: 8px 16px; /* space around text */
+    border-radius: 50px; 
+    padding: 8px 16px; 
     -moz-transition: all 0.2s;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
@@ -309,7 +309,6 @@ header {
     position: absolute;
     margin-left: 200px;
     margin-right: 200px;
-    /*background-color: yellow;*/
     width: 74%;
     height: 540px;
     margin-top: 10px;
@@ -319,7 +318,6 @@ header {
     width: 200px;
     height: 400px;
     float: left;
-    /*background-color: purple;*/
     margin-top: 70px;
     margin-right: 5%
 }
@@ -348,6 +346,9 @@ header {
         float: left;
         bottom: 76px;
     }
+.spec img:hover {
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
 .dog img {
     height: 170px;
     width: auto;
@@ -514,12 +515,12 @@ header {
 
 .button2 {
     position: absolute;
-    background: #D48857; /* background color */
-    color: white; /* text color */
+    background: #D48857; 
+    color: white; 
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
-    border-radius: 50px; /* rounded corners */
-    padding: 14px 22px; /* space around text */
+    border-radius: 50px; 
+    padding: 14px 22px; 
     -moz-transition: all 0.2s;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
@@ -585,11 +586,9 @@ footer {
     height: 180px;
     margin-top: 30px;
     margin-bottom: 30px;
-    /*background-color: pink;*/
 }
 .email {
     position: relative;
-    /*background-color: purple;*/
     height: 180px;
     width: 35%;
     float: left;
@@ -619,28 +618,31 @@ footer {
     border-radius: 1.5rem 0 0 1.5rem;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
     color: #c7bbbf;
-    opacity: 1; /* Firefox */
+    opacity: 1; 
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder { 
     color: #c7bbbf;
 }
 
-:-ms-input-placeholder { /* Microsoft Edge */
+:-ms-input-placeholder { 
     color: #c7bbbf;
 }
 
 .ebutton {
-    margin-left:-4px;
+    margin-left: -4px;
     padding: 1rem 1.5rem;
     border-radius: 0 1.5rem 1.5rem 0;
     border: 1px solid transparent;
     font-weight: bold;
     color: white;
-    background-color: #ff8cb2;
+    background-color: #FCCCC9;
     cursor: pointer;
+}
+.ebutton:hover {
+    background-color: #ff8cb2;
 }
 input:focus, textarea:focus, select:focus {
     outline: none;
@@ -648,7 +650,6 @@ input:focus, textarea:focus, select:focus {
     .menu-nav {
     height: 180px;
     width: 100px;
-    /*background-color: red;*/
     text-align: center;
     line-height: 1.5;
 }
@@ -757,15 +758,41 @@ input:focus, textarea:focus, select:focus {
         font-size: 20px;
         line-height: 1.8;
     }
-         /*gallery*/
 
-.headpic {
+.cover-image {
     position: relative;
-    height: 400px;
-    width: 74%;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    height: 250px;
+    margin-top: 20px;
+}
+
+    .cover-image img {
+        height: 100%;
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+        filter: brightness(75%);
+    }
+        .cover-image img:hover {
+            filter: brightness(100%);
+        }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    transition: opacity 0.3s ease-in-out;
+}
+.cover-image:hover .centered {
+    opacity: 0;
 }
 .gallery {
     margin: 0 auto;
@@ -822,3 +849,99 @@ input:focus, textarea:focus, select:focus {
 .credit a:hover {
     color:#E597A7;
 }
+#contact-form {
+    position: relative;
+    width: 100%;
+    height: 940px;
+}
+.headertxt {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    color: #FCCCC9;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contform {
+    position: absolute;
+    height: 800px;
+    width: 74%;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+form.pinks {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 2px solid #FCCCC9;
+    border-radius: 20px;
+    background-color: #fff6f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+    
+    form.pinks label {
+        display: block;
+        margin-bottom: 5px;
+        color: #666;
+        text-align: center;
+    }
+
+    form.pinks input[type="text"],
+    form.pinks select,
+    form.pinks textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #D4EBF9;
+    }
+
+    
+    form.pinks input[type="submit"] {
+        background-color: #FCCCC9;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+        
+        form.pinks input[type="submit"]:hover {
+            background-color: #E597A7;
+        }
+
+    
+    form.pinks select option {
+        background-color: #d8e7ec;
+    }
+
+    
+    form.pinks select::-ms-expand {
+        display: none;
+    }
+
+    form.pinks select::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    form.pinks select::-webkit-scrollbar-track {
+        background: #d8e7ec;
+    }
+
+    form.pinks select::-webkit-scrollbar-thumb {
+        background-color: #ff99a8;
+        border-radius: 5px;
+    }
+
+
