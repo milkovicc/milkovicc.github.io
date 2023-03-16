@@ -6,7 +6,7 @@
     <meta name="description" content="Pet shop Pink Tail offers over 5000 items in one place. In our online pet shop, we also offer free delivery for orders over 4000 RSD!">
     <meta name="keywords" content="pet shop online, online pet store, free shipping, pet food, pet shop, cats toys, dog toys, cat food, dog food, best pet food">
     <meta name="author" content="Sara Milković, 142/22">
-    <title>Pink Tail | Pet Shop - Gallery</title>
+    <title>Pink Tail | Pet Shop</title>
     <link rel="icon" type="image/x-icon" href="images/logo2.ico">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit|Roboto">
@@ -33,7 +33,7 @@
                     <a href="index.html" class="search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
-                    <a href="index.html#shop" class="cart">
+                    <a href="#shop" class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
                     <a href="index.html" class="log"><i class="fa-solid fa-user"></i></a>
@@ -42,22 +42,41 @@
             </div>
             <div class="cleaner"></div>
         </header>
-        <div class="cover-image">
-            <img src="images/cover.jpg" alt="Cover image for the gallery.">
-            <div class="centered">Welcome to our Gallery!</div>
-        </div>
-        <div class="gallery">
-            <div class="row">
-                <img src="images/11.jpg" alt="A picture of a cat.">
-                <img src="images/12.jpg" alt="A picture of a cat.">
-                <img src="images/14.jpg" alt="A picture of a cat.">
+        <main id="center">
+            <div id="contact-form">
+                <div class="headertxt">Contact us!</div>
+                <div class="contform">
+                    <div class="container">
+                        <form class="pinks" action="action_page.php">
+                            <label for="fname">First name and Last name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <br />
+                            <label for="em">Email address</label>
+                            <input type="text" id="em" name="emaill" placeholder="Your email..">
+                            <br />
+                            <label for="pn">Phone number</label>
+                            <input type="text" id="ph" name="phone" placeholder="Your phone number..">
+                            <br />
+                            <label for="subject">Subject of your message</label>
+                            <select id="subject" name="subject">
+                                <option value="select" disabled="disabled" selected="selected">Select the subject of your message</option>
+                                <option value="Order Question">Order Question</option>
+                                <option value="Cancel order">Cancel Order</option>
+                                <option value="Replace Item">Replace Item</option>
+                                <option value="Refund">Refund</option>
+                                <option value="Complaint">Complaint</option>
+                                <option value="Other questions">Other questions</option>
+                            </select>
+                            <br />
+                            <label for="msg">Message</label>
+                            <textarea id="msg" name="msg" placeholder="Write something.." style="height:200px"></textarea>
+                            <br />
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <img src="images/13.jpg" alt="A picture of a cat.">
-                <img src="images/15.jpg" alt="A picture of a cat.">
-                <img src="images/16.jpg" alt="A picture of a cat.">
-            </div>
-        </div>
+        </main>
         <footer>
             <div id="top">
                 <div class="email">
